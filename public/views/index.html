@@ -24,7 +24,12 @@
                 m = mins - hours * 60;
                 s = secs - mins * 60;
 
-                document.getElementById("timer").innerHTML = '<div>' + d + '<span>days</span></div><div>' + h + '<span>hours</span></div><div>' + m + '<span>minutes</span></div><div>' + s + '<span>seconds</span></div>';
+                if (days < 0) {
+                    document.getElementById("timer").innerHTML = '<div>' + 0 + '<span>days</span></div><div>' + 0 + '<span>hours</span></div><div>' + 0 + '<span>minutes</span></div><div>' + 0 + '<span>seconds</span></div>';
+                } else {
+                    document.getElementById("timer").innerHTML = '<div>' + d + '<span>days</span></div><div>' + h + '<span>hours</span></div><div>' + m + '<span>minutes</span></div><div>' + s + '<span>seconds</span></div>';
+                }
+
             }
 
             setInterval('updateTimer()', 1000);
