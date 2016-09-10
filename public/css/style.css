@@ -15,7 +15,7 @@ body {
   min-width: 90px;
 }
 #timer div span {
-  color: #B1CDF1;
+  color: black;
   display: block;
   font-size: .35em;
   font-weight: 400;

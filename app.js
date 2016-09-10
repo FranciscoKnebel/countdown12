@@ -11,17 +11,21 @@ app.engine('html', require('ejs').renderFile);
 app.set('views', __dirname + "/public/views");
 app.set('view engine', 'ejs');
 
-app.get('/12', function (req, res) {
+app.get('/date1', function (req, res) {
 	res.render('index.html', {date: process.env.date1});
 });
 
-app.get('/13', function (req, res) {
+app.get('/date2', function (req, res) {
 	res.render('index.html', {date: process.env.date2});
+});
+
+app.get('/:date', function (req, res) {
+	res.render('index.html', {date: req.params.date});
 });
 
 app.get('*', function (req, res) {
 	res.render('index.html', {date: process.env.date1});
-});
+})
 
 var port = process.env.PORT || 80; // 80 é a padrão do http
 
