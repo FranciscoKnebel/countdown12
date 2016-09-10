@@ -7,7 +7,7 @@ body {
 #timer {
   font-size: 3em;
   font-weight: 100;
-  color: white;
+  color: black;
   text-shadow: 0 0 20px #48C8FF;
 }
 #timer div {
