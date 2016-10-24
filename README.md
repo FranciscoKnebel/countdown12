@@ -9,6 +9,7 @@ app.get('/:date', function (req, res) {
 ```
 
 Example usage: 
-https://countdown12.herokuapp.com/September 13, 2018 15:30:00
+
+[https://countdown12.herokuapp.com/September 13, 2018 15:30:00](https://countdown12.herokuapp.com/September 13, 2018 15:30:00)
 
 Returns a day/hour/minute/second countdown to defined date.
